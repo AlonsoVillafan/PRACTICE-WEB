@@ -27,27 +27,29 @@
 
             <form action="index.html" method="get">
 
-                <!--caja de formulario--> 
+                <!--caja de formulario-->
                 <fieldset>
-                       
+
                     <legend>Regístrate</legend>
 
                     <label for="edad">Edad:</label>
-                    <input type="number" name="edad" id="edad" required min="18" max="100">
+                    <input type="number" name="edad" id="edad" required min="18"
+                        max="100">
 
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required minlength="2" maxlength="15">
+                    <input type="text" name="nombre" id="nombre" required
+                        minlength="2" maxlength="15">
 
                     <label for="email">Correo:</label>
                     <input type="email" name="correo" id="email" required>
 
                 </fieldset>
 
-
                 <fieldset>
                     <legend>Género</legend>
                     <label for="hombre">Hombre</label>
-                    <input type="radio" name="genero" id="hombre" value="hombre" >
+                    <input type="radio" name="genero" id="hombre"
+                        value="hombre">
 
                     <label for="mujer">Mujer</label>
                     <input type="radio" name="genero" id="mujer" value="mujer">
@@ -57,15 +59,86 @@
                     <legend>Eventos</legend>
                     <label for="evento">Seleccione el evento:</label>
                     <select name="evento" id="evento">
-                        <option value="conferencia_tec">Conferencia tecnologica</option>
+                        <option value="conferencia_tec">Conferencia
+                            tecnologica</option>
                         <option value="webinar_seo">Webinar sobre seo</option>
-                        <option value="taller_cloud">Taller sobre cloud Computing</option>
+                        <option value="taller_cloud">Taller sobre cloud
+                            Computing</option>
                     </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ciudad de evento</legend>
+                    <label for="ciudad">Ciudad:</label>
+                    <input list="ciudades" id="ciudad" name="ciudad" required>
+                    <datalist id="ciudades">
+                        <option value="Madrid"></option>
+                        <option value="Lima"></option>
+                        <option value="Sevilla"></option>
+                        <option value="Valencia"></option>
+                    </datalist>
                 </fieldset>
 
                 <button type="submit">Enviar</button>
 
             </form>
+        </section>
+
+        <section>
+            <h2>Mas información sobre los eventos</h2>
+
+            <details>
+                <summary>Conferencia tecnologica</summary>
+                <div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Sequi, neque, eos temporibus nisi libero
+                        consequuntur tempora dolor quasi mollitia, voluptatem
+                        delectus odio assumenda repellendus magnam illum quos
+                        animi provident saepe?
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Error, facilis. Consequuntur corrupti totam odio soluta
+                        atque dignissimos, eos rerum illo, ut fuga quos
+                        perferendis nemo voluptatem provident quaerat, quam
+                        impedit!
+                    </p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</li>
+                        <li>Error, facilis. Consequuntur corrupti totam odio
+                            soluta atque dignissimos</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</li>
+                        <li>Error, facilis. Consequuntur corrupti totam odio
+                            soluta atque dignissimos</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</li>
+                        <li>Error, facilis. Consequuntur corrupti totam odio
+                            soluta atque dignissimos</li>
+                    </ul>
+
+                </div>
+
+            </details>
+
+            <details>
+                <summary>Webinar sobre seo</summary>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error, facilis. Consequuntur corrupti totam odio soluta
+                    atque dignissimos,
+                </p>
+            </details>
+
+            <details>
+                <summary>Taller sobre Cloud computing</summary>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Error, facilis. Consequuntur corrupti totam odio soluta
+                    atque dignissimos,
+                </p>
+            </details>
         </section>
 
     </body>
